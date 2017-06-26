@@ -16,6 +16,7 @@
 .project
 .strong-pm
 coverage
+bower_components
 node_modules
 npm-debug.log
 nKindler.log
