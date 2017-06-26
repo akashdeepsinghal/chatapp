@@ -164,3 +164,16 @@ function UsernameDialogController($scope, $mdDialog) {
     };
 }
     
+
+var options = {
+    body: data.content
+};
+var notification = new Notification("Message from: "+data.username, options);      
+
+notification.onshow = function () {
+
+  // auto close after 1 second
+  setTimeout(function () {
+      notification.close();
+  }, 2000);
+}
